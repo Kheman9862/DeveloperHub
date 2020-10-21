@@ -1,0 +1,25 @@
+{
+  "name": "developerhub",
+  "version": "1.0.0",
+  "description": "This is the social media of developers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kheman9862/DeveloperHub.git"
+  },
+  "keywords": [
+    "Mongo",
+    "Express",
+    "Reactjs",
+    "Nodejs"
+  ],
+  "author": "Kheman Garg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kheman9862/DeveloperHub/issues"
+  },
+  "homepage": "https://github.com/Kheman9862/DeveloperHub#readme"
+}
