@@ -4,7 +4,7 @@ const users = require("./routes/api/users");
 const profile = require("./routes/api/profile");
 const posts = require("./routes/api/posts");
 const bodyParser = require("body-parser");
-const passport =  require('passport');   
+const passport = require("passport");
 
 const app = express();
 
@@ -25,7 +25,7 @@ mongoose
 app.use(passport.initialize());
 
 //Passport config
-require('./config/passport')(passport);
+require("./config/passport")(passport);
 
 // use routes
 app.use("/api/users", users);

@@ -61,12 +61,17 @@ router.post("/login", (req, res) => {
         const payload = { user: user.id, name: user.name, avatar: user.avatar };
 
         // Sign Token
-        jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 },(err,token)=>{
+        jwt.sign(
+          payload,
+          keys.secretOrKey,
+          { expiresIn: 3600 },
+          (err, token) => {
             res.json({
-                succes:true,
-                token:'Bearer ' + token
-            })
-        });
+              succes: true,
+              token: "Bearer " + token,
+            });
+          }
+        );
       } else {
         return res.status(400).json({ password: "Password incorrect" });
       }
