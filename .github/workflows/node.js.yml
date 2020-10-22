@@ -19,8 +19,6 @@ jobs:
         node-version: [10.x, 12.x, 14.x]
 
     steps:
-    - name: ansible-lint
-      uses: ansible/ansible-lint-action@v4.1.0.post0
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -28,4 +26,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
+    - name: ansible-lint
+      uses: ansible/ansible-lint-action@v4.1.0.post0
     - run: npm test
