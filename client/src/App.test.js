@@ -1,3 +1,4 @@
+// "test": "react-scripts test", This is a script deleted from package.json
 // import { render, screen } from "@testing-library/react";
 // import App from "./App";
 
