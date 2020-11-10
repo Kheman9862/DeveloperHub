@@ -88,15 +88,15 @@ git push heroku master:master
 
 ---
 
-<img src="img/developer-profiles.png">
+<img src="img/developer-profiles.PNG">
 
 ---
 
-<img src="img/post-feed.png">
+<img src="img/post-feed.PNG">
 
 ---
 
-<img src="img/comment-feed.png">
+<img src="img/comment-feed.PNG">
 
 ---
 
