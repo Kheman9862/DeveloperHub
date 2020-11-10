@@ -84,7 +84,7 @@ npm run build
 git push heroku master:master
 ```
 
-<img src="img/dashboard.png">
+<img src="img/dashboard.PNG">
 
 ---
 
