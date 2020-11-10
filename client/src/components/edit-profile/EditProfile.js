@@ -25,7 +25,7 @@ class CreateProfile extends Component {
       twitter: "",
       facebook: "",
       linkedin: "",
-      youtube: "",
+      github: "",
       instagram: "",
       errors: {},
     };
@@ -67,8 +67,8 @@ class CreateProfile extends Component {
       profile.linkedin = !isEmpty(profile.social.linkedin)
         ? profile.social.linkedin
         : "";
-      profile.youtube = !isEmpty(profile.social.youtube)
-        ? profile.social.youtube
+      profile.github = !isEmpty(profile.social.github)
+        ? profile.social.github
         : "";
       profile.instagram = !isEmpty(profile.social.instagram)
         ? profile.social.instagram
@@ -88,7 +88,7 @@ class CreateProfile extends Component {
         facebook: profile.facebook,
         instagram: profile.instagram,
         linkedin: profile.linkedin,
-        youtube: profile.youtube,
+        github: profile.github,
       });
     }
   }
@@ -108,7 +108,7 @@ class CreateProfile extends Component {
       twitter: this.state.twitter,
       facebook: this.state.facebook,
       linkedin: this.state.linkedin,
-      youtube: this.state.youtube,
+      github: this.state.github,
       instagram: this.state.instagram,
     };
 
@@ -155,12 +155,12 @@ class CreateProfile extends Component {
           />
 
           <InputGroup
-            placeholder="YouTube Channel URL"
-            name="youtube"
-            icon="fab fa-youtube"
-            value={this.state.youtube}
+            placeholder="Github Profile URL"
+            name="github"
+            icon="fab fa-github"
+            value={this.state.github}
             onChange={this.onChange}
-            error={errors.youtube}
+            error={errors.github}
           />
 
           <InputGroup
@@ -278,7 +278,7 @@ class CreateProfile extends Component {
                   >
                     Add Social Network Links
                   </button>
-                  <span className="text-muted">Optional</span>
+                  <span className="text-muted ml-3">Optional</span>
                 </div>
                 {socialInputs}
                 <input

@@ -22,7 +22,7 @@ class CreateProfile extends Component {
     twitter: "",
     facebook: "",
     linkedin: "",
-    youtube: "",
+    github: "",
     instagram: "",
     errors: {},
   };
@@ -52,7 +52,7 @@ class CreateProfile extends Component {
       twitter: this.state.twitter,
       facebook: this.state.facebook,
       linkedin: this.state.linkedin,
-      youtube: this.state.youtube,
+      github: this.state.github,
       instagram: this.state.instagram,
     };
 
@@ -94,12 +94,12 @@ class CreateProfile extends Component {
           />
 
           <InputGroup
-            placeholder="YouTube Channel URL"
-            name="youtube"
-            icon="fab fa-youtube"
-            value={this.state.youtube}
+            placeholder="Github Account Link here"
+            name="github"
+            icon="fab fa-github"
+            value={this.state.github}
             onChange={(e) => this.onChange(e)}
-            error={errors.youtube}
+            error={errors.github}
           />
 
           <InputGroup

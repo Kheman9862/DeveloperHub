@@ -30,9 +30,9 @@ module.exports = function validateProfileInput(data) {
     }
   }
 
-  if (!isEmpty(data.youtube)) {
-    if (!Validator.isURL(data.youtube)) {
-      errors.youtube = "Not a valid URL";
+  if (!isEmpty(data.github)) {
+    if (!Validator.isURL(data.github)) {
+      errors.github = "Not a valid URL";
     }
   }
 

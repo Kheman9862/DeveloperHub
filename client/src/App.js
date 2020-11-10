@@ -24,10 +24,9 @@ import Profile from "./components/profile/Profile";
 import Posts from "./components/posts/Posts";
 import Post from "./components/post/Post";
 import { NotFound } from "./components/not-found/NotFound";
+
 // Check for token
-console.log("Hi");
 if (localStorage.jwtToken) {
-  console.log("Hola");
   //Set auth token header auth
   setAuthToken(localStorage.jwtToken);
 

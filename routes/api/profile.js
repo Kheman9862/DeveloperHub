@@ -132,7 +132,7 @@ router.post(
 
     // Social
     profileFields.social = {};
-    if (req.body.youtube) profileFields.social.youtube = req.body.youtube;
+    if (req.body.github) profileFields.social.github = req.body.github;
     if (req.body.twitter) profileFields.social.twitter = req.body.twitter;
     if (req.body.facebook) profileFields.social.facebook = req.body.facebook;
     if (req.body.linkedin) profileFields.social.linkedin = req.body.linkedin;
@@ -265,12 +265,12 @@ router.delete(
   "/education/:edu_id",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    Profile.findOne({ user: req.user._id })
+    Profile.findOne({ user: req.user.id })
       .then((profile) => {
         // Get remove index
         const removeIndex = profile.education
           .map((item) => item.id)
-          .indexOf(req.params.edu._id);
+          .indexOf(req.params.edu_id);
 
         // Splice out of array
         profile.education.splice(removeIndex, 1);
