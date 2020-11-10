@@ -6,7 +6,7 @@ Users can also create small posts and like/dislike and comment on other posts.
 
 Live link: <a href="https://developer-media.herokuapp.com/" target="_blank"> Click here</a>
 
-<img src="./img/home.png">
+<img src="https://github.com/Kheman9862/DeveloperHub/blob/main/img/home.PNG">
 
 ---
 
